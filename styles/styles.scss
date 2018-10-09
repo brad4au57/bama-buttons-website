@@ -1,0 +1,136 @@
+/************************
+	Table of Contents
+	
+	1. Color Palette
+	2.
+	3.
+
+*************************/
+
+/*** 1. Color Palette ***/
+
+$red            : #970000; 
+$red-highlight  : #b61414;
+$grey           : #828a8f;
+$white          : #ffffff;
+$off-white      : #eeeeee;
+
+/*** Background ***/
+body{
+	background-color: $off-white;
+	padding: 0;
+	margin: 0;
+}
+
+
+/***  Navbar ***/
+.navbar-custom {
+    background-color: $red;
+    border-bottom: 8px solid $grey;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: $white;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: $off-white;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: $white;
+}
+
+.custom-toggler.navbar-toggler{
+    border-color: $white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+// .nav-border-bottom{
+// 	height: 5px;
+// 	width: 100%;
+// 	background-color: $grey;
+// }
+
+
+/*** Product Cards ***/
+.cards-container
+
+.card {
+	border: none;
+	background-color: $white;
+	box-shadow: -10px 10px 75px $grey;
+}
+
+.card-border{
+	height: 10px;
+	width: 100%;
+	background-color: $red;
+	z-index: 1;
+	border-radius: 0px 0px 3px 3px;
+}
+
+/*** Contact Section ***/
+
+.contact{
+	border-top: 10px solid $red;
+	background-color: $grey;
+}
+
+.contact-text{
+	color: $white;
+}
+
+.contact-text .largeText{
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.contact-text .smallText{
+	font-size: 1.5em;
+}
+
+.contact-text{
+	border-right: 5px solid $white;
+}
+
+.col-md-6 .contact-form{
+	padding: 50px;
+}
+
+.contact-form .form-group label{
+	color: $white;
+}
+
+
+
+
+/* Sizing */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	li.nav-item:first-child {
+		border-right: 2px solid $white;
+		padding-right: 12px;
+	}
+	li.nav-item:nth-child(2){
+		padding-left: 10px;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
+
+
+// Example usage:
